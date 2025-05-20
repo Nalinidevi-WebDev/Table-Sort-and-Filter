@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Sort</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <section class="addItemView">
+        <div>
+            <div id="addNew">
+                <label id="addNewItem">Add New Item</label>
+            </div>
+            <div id="inputDiv">
+                <input type="text" placeholder="Enter Name" id="newName">
+                 <input type="text" placeholder="Enter Course" id="newCourse">
+                  <input type="text" placeholder="Enter Status" id="newStatus">
+                  <button class="add">Add Item</button>
+                  <button class="update">Update Item</button>
+            </div>
+        </div>
+
+    </section>
+    <section class="tableview">
+      <div class="search">
+        <label for="searchitem">Search For Item</label>
+        <input type="text" name="searchitem" id="searchitem"  placeholder="Search items"/>
+      </div>
+
+      <div class="tableview">
+        <table id="table" cellspacing="0" cellpadding="0">
+          <tr class="heading">
+            <th id="no">S.no</th>
+            <th id="name">Name</th>
+            <th id="course">Course</th>
+            <th id="status">Status</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </body>
+</html>
