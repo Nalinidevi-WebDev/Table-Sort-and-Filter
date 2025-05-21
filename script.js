@@ -107,8 +107,6 @@ function capitalizeFirstLetter(string) {
 }
 // edit function
 function edit(editbtn, i) {
-  console.log(editbtn.classList);
-
   newName.value = data[i].name;
   newCourse.value = data[i].course;
   newStatus.value = data[i].status;
@@ -137,11 +135,8 @@ function del(d) {
  
   const confirmBtn = popUp.querySelector("#confirmBtn");
   const cancelBtn = popUp.querySelector("#cancelBtn");
-  
-console.log(confirmBtn);
   confirmBtn.addEventListener("click", function () {
     data.splice(d, 1);
-    console.log(d);
     remove();
     data.map((d, i) => additem(d, i));
     popUp.remove();
