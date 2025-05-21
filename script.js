@@ -133,8 +133,12 @@ upadteItem.addEventListener("click", function () {
 // Delete row function
 function del(d) {
   const popUp = createPopup();
-  const confirmBtn = popUp.querySelector("confirmBtn");
-  const cancelBtn = popUp.querySelector("cancelBtn");
+
+ 
+  const confirmBtn = popUp.querySelector("#confirmBtn");
+  const cancelBtn = popUp.querySelector("#cancelBtn");
+  
+console.log(confirmBtn);
   confirmBtn.addEventListener("click", function () {
     data.splice(d, 1);
     console.log(d);
@@ -221,7 +225,7 @@ sortCourse.addEventListener("click",function()
   sortvalue.map((d,i)=> additem(d,i));
 })
 
-// sort by course status
+ // sort by course status
 sortStatus.addEventListener("click",function()
 {
   let i = 1;
