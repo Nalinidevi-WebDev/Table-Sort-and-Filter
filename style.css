@@ -1,142 +1,116 @@
-
-*
-{
-    box-sizing: border-box;
-    align-content: center;
+* {
+  box-sizing: border-box;
+  align-content: center;
 }
-body
-{     background-color: darkseagreen;
-
+body {
+  background-color: darkseagreen;
 }
-
-.tableview
-{
-        margin: 5px;
-    padding: 3px;
-   
+.tableview {
+  margin: 5px;
+  padding: 3px;
 }
-#table
-{
-        width: 100%;
-    text-align: center;
-        background-color: gainsboro;
+#table {
+  width: 100%;
+  text-align: center;
+  background-color: gainsboro;
 }
-#table .heading
-{
-    background-color: forestgreen;
-    height: 40px;
-    font-size: 20px;
+#table .heading {
+  background-color: forestgreen;
+  height: 40px;
+  font-size: 20px;
 }
-#table tr
-{
-    
-    height: 30px;
+#table tr {
+  height: 30px;
 }
-.search
-{
-    display: flex
-;
-    flex-direction: column;
-    margin: 10px;
-    padding: 5px;
-    background-color: lavender;
+.search {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 5px;
+  background-color: lavender;
 }
-.search label
-{
-    font-size: 17px;
-    font-weight: bold;
-    margin: 4px;
+.search label {
+  font-size: 17px;
+  font-weight: bold;
+  margin: 4px;
 }
-.search input
-{
-    font-size: 17px;
-    margin: 4px;
-    border-radius: 10px;
-    border: none;
-    height: 30px;
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    margin-bottom: 12px;
+.search input {
+  font-size: 17px;
+  margin: 4px;
+  border-radius: 10px;
+  border: none;
+  height: 30px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  margin-bottom: 12px;
 }
-#addNew
-{
-margin: 5px;
-padding: 5px;
+#addNew {
+  margin: 5px;
+  padding: 5px;
 }
-#addNewItem
-{
-    font-weight: bold;
+#addNewItem {
+  font-weight: bold;
 }
-#inputDiv
-{
-    margin: 8px;
-padding: 10px;
+#inputDiv {
+  margin: 8px;
+  padding: 10px;
 }
-#inputDiv input
-{
-   font-size: 12px;
-    padding: 10px 10px 10px 20px;
-    border: none;
-    text-transform: capitalize;
-}
-
-.add
-{
+#inputDiv input {
   font-size: 12px;
-    padding: 10px ;
+  padding: 10px 10px 10px 20px;
   border: none;
-    background-color: limegreen;
-    font-weight: bold;
-    display: "";
+  text-transform: capitalize;
 }
-.update
-{
-    display: none;
-    font-size: 12px;
-    padding: 10px ;
+
+.add {
+  font-size: 12px;
+  padding: 10px;
   border: none;
-    background-color: limegreen;
-    font-weight: bold;
+  background-color: limegreen;
+  font-weight: bold;
+  display: "";
 }
-#popupView
-{
-   background-color: rgba(0, 0, 0, 0.3);
-    /* margin: 0px; */
-    position: fixed;
-    /* opacity: 0; */
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.update {
+  display: none;
+  font-size: 12px;
+  padding: 10px;
+  border: none;
+  background-color: limegreen;
+  font-weight: bold;
 }
-    
-#popupBox
-{
-        background-color: gainsboro;
-    padding: 10px;
-    align-items: center;
-    border-radius: 20px;
+#popupView {
+  background-color: rgba(0, 0, 0, 0.3);
+  /* margin: 0px; */
+  position: fixed;
+  /* opacity: 0; */
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-#popupTitle
-{
-    text-align: left;
+
+#popupBox {
+  background-color: gainsboro;
+  padding: 10px;
+  align-items: center;
+  border-radius: 20px;
 }
-#buttonView
-{
-        display: flex
-;
-    justify-content: flex-end;
-    margin: 2px;
-    padding: 5px;
+#popupTitle {
+  text-align: left;
 }
-#buttonView button
-{
-       padding: 5px;
-    margin: 2px;
-    background: cadetblue;
-    font-size: 13px;
+#buttonView {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2px;
+  padding: 5px;
+}
+#buttonView button {
+  padding: 5px;
+  margin: 2px;
+  background: cadetblue;
+  font-size: 13px;
 }
