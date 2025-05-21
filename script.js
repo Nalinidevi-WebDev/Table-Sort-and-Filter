@@ -69,7 +69,7 @@ addNewItem.addEventListener("click", function () {
     let newItem = {
       name: capitalizeFirstLetter(newName.value),
       course: capitalizeFirstLetter(newCourse.value),
-      status: capitalizeFirstLetter(newStatus.value)
+      status: capitalizeFirstLetter(newStatus.value),
     };
     data.push(newItem);
     [newItem].map((d, i) => additem(d, data.length - 1));
@@ -89,7 +89,7 @@ function clear() {
   newStatus.value = "";
 }
 
-// Switch add and update button 
+// Switch add and update button
 function changetoAdd() {
   upadteItem.style.display = "none";
 
@@ -132,7 +132,6 @@ upadteItem.addEventListener("click", function () {
 function del(d) {
   const popUp = createPopup();
 
- 
   const confirmBtn = popUp.querySelector("#confirmBtn");
   const cancelBtn = popUp.querySelector("#cancelBtn");
   confirmBtn.addEventListener("click", function () {
@@ -177,64 +176,55 @@ function createPopup() {
 // table sort
 // get table head
 const tableHead = document.querySelector(".heading");
-const headarr =  tableHead.querySelectorAll("th")
-const sortName = headarr[1]
-const sortCourse = headarr[2]
-const sortStatus = headarr[3]
+const headarr = tableHead.querySelectorAll("th");
+const sortName = headarr[1];
+const sortCourse = headarr[2];
+const sortStatus = headarr[3];
 
 // sort by name
-sortName.addEventListener("click",function()
-{
+sortName.addEventListener("click", function () {
   let i = 1;
-  let sortvalue = data.sort((a,b)=>
-  {
+  let sortvalue = data.sort((a, b) => {
     let name1 = a.name.toLowerCase();
-      let name2 = b.name.toLowerCase();
-      if (name1 < name2)
-      {
-        return -1;
-      }
+    let name2 = b.name.toLowerCase();
+    if (name1 < name2) {
+      return -1;
+    }
 
     return 0;
-  })
+  });
   remove();
-  sortvalue.map((d,i)=> additem(d,i));
-})
+  sortvalue.map((d, i) => additem(d, i));
+});
 
- // sort by course
-sortCourse.addEventListener("click",function()
-{
+// sort by course
+sortCourse.addEventListener("click", function () {
   let i = 1;
-  let sortvalue = data.sort((a,b)=>
-  {
+  let sortvalue = data.sort((a, b) => {
     let name1 = a.course.toLowerCase();
-      let name2 = b.course.toLowerCase();
-      if (name1 < name2)
-      {
-        return -1;
-      }
+    let name2 = b.course.toLowerCase();
+    if (name1 < name2) {
+      return -1;
+    }
 
     return 0;
-  })
+  });
   remove();
-  sortvalue.map((d,i)=> additem(d,i));
-})
+  sortvalue.map((d, i) => additem(d, i));
+});
 
- // sort by course status
-sortStatus.addEventListener("click",function()
-{
+// sort by course status
+sortStatus.addEventListener("click", function () {
   let i = 1;
-  let sortvalue = data.sort((a,b)=>
-  {
+  let sortvalue = data.sort((a, b) => {
     let name1 = a.status.toLowerCase();
-      let name2 = b.status.toLowerCase();
-      if (name1 < name2)
-      {
-        return -1;
-      }
+    let name2 = b.status.toLowerCase();
+    if (name1 < name2) {
+      return -1;
+    }
 
     return 0;
-  })
+  });
   remove();
-  sortvalue.map((d,i)=> additem(d,i));
-})
+  sortvalue.map((d, i) => additem(d, i));
+});
